@@ -15,6 +15,7 @@ repositories {
 }
 
 dependencies {
+	testCompile 'org.junit.jupiter:junit-jupiter-api:5.3.2'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

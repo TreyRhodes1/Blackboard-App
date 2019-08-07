@@ -2,7 +2,7 @@ package project.school.blackboard.models;
 
 import java.util.HashMap;
 
-public class Class {
+public class Course {
     private String id;
     private String courseId;
     private String name;
@@ -13,8 +13,8 @@ public class Class {
     private String termId;
     private HashMap<String, Object> availability;
 
-    public Class(String id, String courseId, String name, String description, boolean organization,
-                 String ultraStatus, boolean readOnly, String termId, HashMap<String, Object> availability) {
+    public Course(String id, String courseId, String name, String description, boolean organization,
+                  String ultraStatus, boolean readOnly, String termId, HashMap<String, Object> availability) {
         this.id = id;
         this.courseId = courseId;
         this.name = name;

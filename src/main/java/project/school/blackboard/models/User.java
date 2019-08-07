@@ -12,10 +12,11 @@ public class User {
     private String[] systemRoleIds;
     private HashMap<String, String> name;
     private HashMap<String, String> contact;
+    private Course[] courses;
 
     public User(String id, String userName, String studentId, String educationLevel, String gender,
                 String[] institutionRoleIds, String[] systemRoleIds, HashMap<String, String> name,
-                HashMap<String, String> contact) {
+                HashMap<String, String> contact, Course[] courses) {
         this.id = id;
         this.userName = userName;
         this.studentId = studentId;
@@ -25,6 +26,7 @@ public class User {
         this.systemRoleIds = systemRoleIds;
         this.name = name;
         this.contact = contact;
+        this.courses = courses;
     }
 
     public String getId() {
@@ -97,5 +99,13 @@ public class User {
 
     public void setContact(HashMap<String, String> contact) {
         this.contact = contact;
+    }
+
+    public Course[] getCourses() {
+        return courses;
+    }
+
+    public void setCourses(Course[] courses) {
+        this.courses = courses;
     }
 }

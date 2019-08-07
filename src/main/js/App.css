@@ -30,7 +30,7 @@
   color: #282c34;
 }
 
-.Breadcrumb-bar {
+.Nav-bar {
   background-color: lightslategray;
   display: flex;
 
@@ -40,8 +40,8 @@
   font-size: calc(2vmin);
 }
 
-.Breadcrumb-button {
-  background-color: lightslategray;
+.Nav-button {
+  background-color: pink;
   width: 100%;
   border-left-color: #282c34;
   border-top-width: 0;

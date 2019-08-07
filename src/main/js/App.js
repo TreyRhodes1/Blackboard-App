@@ -7,14 +7,14 @@ function App() {
       <header className="App-header">
           Blackboard Sucks
       </header>
-      <body className="Breadcrumb-bar">
-        <button className="Breadcrumb-button">
+      <body className="Nav-bar">
+        <button className="Nav-button">
           Classes
         </button>
-        <button className="Breadcrumb-button">
+        <button className="Nav-button">
           Assignments
         </button>
-        <button className="Breadcrumb-button">
+        <button className="Nav-button">
           Announcements
         </button>
       </body>
