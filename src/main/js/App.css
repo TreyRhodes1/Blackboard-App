@@ -10,13 +10,46 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 9vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 3vmin);
+  color: white;
+}
+
+.App-body {
+  background-color: azure;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #282c34;
+}
+
+.Breadcrumb-bar {
+  background-color: lightslategray;
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  font-size: calc(2vmin);
+}
+
+.Breadcrumb-button {
+  background-color: lightslategray;
+  width: 100%;
+  border-left-color: #282c34;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-right-color: #282c34;
+  min-height: 6vh;
+  align-items: center;
+  font-size: calc(3vmin);
 }
 
 .App-link {
