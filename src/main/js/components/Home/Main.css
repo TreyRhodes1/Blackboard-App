@@ -1,0 +1,70 @@
+.Header {
+  background-color: #282c34;
+  min-height: 6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 3vmin);
+  color: white;
+}
+
+.Body {
+  background-color: azure;
+  min-height: 85vh;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+.Footer {
+  background-color: #282c34;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: calc(2vmin - 5px);
+  padding-right: 10px;
+  color: white;
+}
+
+.Nav-bar {
+  background-color: lightslategray;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.Nav-button {
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  background-color: pink;
+  text-underline: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #282c34;
+  min-height: 4vh;
+  align-items: center;
+  position: center;
+  font-size: calc(3vmin);
+  color: #282c34;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.Nav-link {
+  width: 100%;
+}

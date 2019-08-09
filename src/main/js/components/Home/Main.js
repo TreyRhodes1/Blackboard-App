@@ -1,5 +1,19 @@
-import React from "react";
-import {BrowserRouter as Router, Route, Link, HashRouter} from "react-router-dom";
+import React, {Component} from "react";
+import "./Main.css"
+import {Route, Link} from "react-router-dom";
+import "../Authentication/SendAuth"
+import SendToDropbox from "../Authentication/SendAuth";
+
+function Welcome() {
+  return (
+    <main className="Body">
+      <p>
+        Welcome!
+      </p>
+      <SendToDropbox/>
+    </main>
+  );
+}
 
 function Classes() {
   return (
@@ -31,9 +45,14 @@ function Announcements() {
   );
 }
 
-function AppRouter() {
+function Main() {
   return (
     <div>
+      <Link to="/">
+        <header className="Header">
+          Blackboard Sucks
+        </header>
+      </Link>
       <header className="Nav-bar">
         <Link to="/classes" className="Nav-link">
           <div className="Nav-button">
@@ -56,11 +75,19 @@ function AppRouter() {
         </Link>
       </header>
 
+      <Route exact path="/" component={Welcome}/>
       <Route path="/classes/" component={Classes}/>
       <Route path="/assignments/" component={Assignments}/>
       <Route path="/announcements/" component={Announcements}/>
+      <footer className="Footer">
+        Built by: Trey Rhodes
+      </footer>
     </div>
   );
 }
 
-export default AppRouter;
+function Login() {
+  process.env.CLIENT_ID = "trey";
+}
+
+export default Main;
